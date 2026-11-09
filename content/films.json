@@ -1,0 +1,66 @@
+{
+  "eyebrow": "01 — Portfolio",
+  "heading": "Featured Films",
+  "items": [
+    {
+      "title": "Coastline at Golden Hour",
+      "category": "travel",
+      "video": "https://assets.mixkit.co/videos/48527/48527-720.mp4",
+      "thumb": "https://assets.mixkit.co/videos/48527/48527-thumb-720-0.jpg"
+    },
+    {
+      "title": "Suburban Neighborhood Tour",
+      "category": "real-estate",
+      "video": "https://assets.mixkit.co/videos/48394/48394-720.mp4",
+      "thumb": "https://assets.mixkit.co/videos/48394/48394-thumb-720-0.jpg"
+    },
+    {
+      "title": "Beachside Celebration",
+      "category": "weddings",
+      "video": "https://assets.mixkit.co/videos/1305/1305-720.mp4",
+      "thumb": "https://assets.mixkit.co/videos/1305/1305-thumb-720-0.jpg"
+    },
+    {
+      "title": "City Center Brand Film",
+      "category": "commercial",
+      "video": "https://assets.mixkit.co/videos/1616/1616-720.mp4",
+      "thumb": "https://assets.mixkit.co/videos/1616/1616-thumb-720-0.jpg"
+    },
+    {
+      "title": "Site Survey Flyover",
+      "category": "construction",
+      "video": "https://assets.mixkit.co/videos/600/600-720.mp4",
+      "thumb": "https://assets.mixkit.co/videos/600/600-thumb-720-0.jpg"
+    },
+    {
+      "title": "Mountain Highway Run",
+      "category": "travel",
+      "video": "https://assets.mixkit.co/videos/52428/52428-720.mp4",
+      "thumb": "https://assets.mixkit.co/videos/52428/52428-thumb-720-0.jpg"
+    },
+    {
+      "title": "Modern Farmhouse Listing",
+      "category": "real-estate",
+      "video": "",
+      "thumb": "https://picsum.photos/id/1043/1280/800"
+    },
+    {
+      "title": "Music Festival Recap",
+      "category": "weddings",
+      "video": "",
+      "thumb": "https://picsum.photos/id/1044/1280/800"
+    },
+    {
+      "title": "Retail Grand Opening",
+      "category": "commercial",
+      "video": "",
+      "thumb": "https://picsum.photos/id/1067/1280/800"
+    },
+    {
+      "title": "Bridge Project Progress",
+      "category": "construction",
+      "video": "",
+      "thumb": "https://picsum.photos/id/1022/1280/800"
+    }
+  ]
+}
