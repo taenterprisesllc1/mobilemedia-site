@@ -1,0 +1,7 @@
+# Netlify settings for the Mobile Media site.
+# This site is plain HTML/CSS/JS — there is nothing to build.
+# Netlify just publishes the files as they are.
+
+[build]
+  publish = "."
+  command = "echo 'No build needed — publishing files as-is'"
