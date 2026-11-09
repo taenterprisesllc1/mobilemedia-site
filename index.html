@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  Mobile Media — Drone Aerial Photography & Video
+  ------------------------------------------------------------
+  YOU DON'T NEED TO EDIT THIS FILE TO CHANGE CONTENT.
+  All text, videos, photos, backgrounds, services, team, reviews and
+  contact info live in the content/ folder, and are edited at /admin.
+  This file is just the page layout.
+  See HOW-TO-EDIT.md for step-by-step instructions.
+  ============================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobile Media | Drone Aerial Photography & Video</title>
+  <meta name="description" content="Mobile Media — drone aerial photography and video." />
+  <meta name="theme-color" content="#0a0a0b" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Background footage, 3D drone and cinematic grade -->
+  <div class="world-fallback" aria-hidden="true"></div>
+  <div class="bg" id="bg" aria-hidden="true"></div>
+  <canvas id="world" aria-hidden="true"></canvas>
+  <div class="flare" id="flare" aria-hidden="true"></div>
+  <div class="grade" aria-hidden="true"></div>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo" aria-label="Home">
+        <img data-src="business.logo" alt="" class="nav__logo-img" />
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Main">
+        <a href="#work">Films</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact" class="btn btn--accent btn--sm">Get a Quote</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="flight" id="flight">
+    <div class="stage" id="stage">
+
+      <!-- 1. HOME -->
+      <section class="scene scene--hero" data-id="home" data-side="left" data-label="Home">
+        <div class="scene__inner">
+          <img data-src="business.logo" alt="" class="hero__logo" />
+          <p class="eyebrow" data-text="hero.eyebrow"></p>
+          <h1 class="hero__title"><span data-text="hero.titleLine1"></span><br /><span class="accent" data-text="hero.titleLine2"></span></h1>
+          <p class="hero__tagline" data-text="hero.tagline"></p>
+          <div class="cta">
+            <a href="#work" class="btn btn--accent" data-text="hero.primaryButton"></a>
+            <a href="#contact" class="btn btn--ghost" data-text="hero.secondaryButton"></a>
+          </div>
+          <p class="hint"><span class="hint__mouse"><i></i></span> Scroll to take off</p>
+        </div>
+      </section>
+
+      <!-- 2. FILMS -->
+      <section class="scene" data-id="work" data-side="right" data-label="Films">
+        <div class="scene__inner panel">
+          <p class="eyebrow" data-text="films.eyebrow"></p>
+          <h2 class="title" data-text="films.heading"></h2>
+          <div class="filters" data-filter-group="videos" role="tablist" aria-label="Filter videos"></div>
+          <div class="video-grid" id="videoGrid"></div>
+        </div>
+      </section>
+
+      <!-- 3. GALLERY -->
+      <section class="scene" data-id="gallery" data-side="left" data-label="Gallery">
+        <div class="scene__inner panel">
+          <p class="eyebrow" data-text="gallery.eyebrow"></p>
+          <h2 class="title" data-text="gallery.heading"></h2>
+          <div class="filters" data-filter-group="photos" role="tablist" aria-label="Filter photos"></div>
+          <div class="masonry" id="photoGrid"></div>
+          <div class="center"><button class="btn btn--ghost btn--sm" id="loadMore">Load More</button></div>
+        </div>
+      </section>
+
+      <!-- 4. SERVICES -->
+      <section class="scene" data-id="services" data-side="right" data-label="Services">
+        <div class="scene__inner panel">
+          <p class="eyebrow" data-text="services.eyebrow"></p>
+          <h2 class="title" data-text="services.heading"></h2>
+          <div class="services" id="servicesGrid"></div>
+        </div>
+      </section>
+
+      <!-- 5. ABOUT -->
+      <section class="scene" data-id="about" data-side="left" data-label="About">
+        <div class="scene__inner panel">
+          <p class="eyebrow" data-text="about.eyebrow"></p>
+          <h2 class="title" data-text="about.heading"></h2>
+          <div class="about__photo">
+            <img data-src="about.photo" alt="Our team on location" loading="lazy" />
+            <div class="about__badge"><strong data-text="about.yearsFlying"></strong><span>Years flying</span></div>
+          </div>
+          <div id="aboutStory"></div>
+          <div class="about__grid">
+            <div>
+              <h3 class="mini-title">Certifications</h3>
+              <ul class="checklist" id="certList"></ul>
+            </div>
+            <div>
+              <h3 class="mini-title">Our Gear</h3>
+              <ul class="checklist" id="gearList"></ul>
+            </div>
+          </div>
+          <div class="team" id="teamList"></div>
+        </div>
+      </section>
+
+      <!-- 6. REVIEWS -->
+      <section class="scene" data-id="testimonials" data-side="right" data-label="Reviews">
+        <div class="scene__inner panel">
+          <p class="eyebrow" data-text="testimonials.eyebrow"></p>
+          <h2 class="title" data-text="testimonials.heading"></h2>
+          <div class="slider" id="slider" aria-roledescription="carousel">
+            <div class="slider__track" id="slideTrack"></div>
+            <div class="slider__controls">
+              <button class="slider__btn" id="prevSlide" aria-label="Previous review"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+              <div class="slider__dots" id="sliderDots"></div>
+              <button class="slider__btn" id="nextSlide" aria-label="Next review"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. CONTACT -->
+      <section class="scene" data-id="contact" data-side="left" data-label="Contact">
+        <div class="scene__inner panel">
+          <p class="eyebrow" data-text="contact.eyebrow"></p>
+          <h2 class="title" data-text="contact.heading"></h2>
+          <p class="muted" data-text="contact.intro"></p>
+
+          <form class="form" id="quoteForm" name="quote" action="" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+            <input type="hidden" name="form-name" value="quote" />
+            <p hidden><label>Leave this empty: <input name="bot-field" /></label></p>
+            <div class="form__row">
+              <label class="field"><span>Name *</span><input type="text" name="name" autocomplete="name" required /></label>
+              <label class="field"><span>Email *</span><input type="email" name="email" autocomplete="email" required /></label>
+            </div>
+            <div class="form__row">
+              <label class="field"><span>Phone</span><input type="tel" name="phone" autocomplete="tel" /></label>
+              <label class="field"><span>Service Type *</span>
+                <select name="service" id="serviceSelect" required></select>
+              </label>
+            </div>
+            <div class="form__row">
+              <label class="field"><span>Project Date</span><input type="date" name="date" /></label>
+              <label class="field"><span>Location</span><input type="text" name="location" placeholder="City or address" /></label>
+            </div>
+            <label class="field"><span>Message *</span><textarea name="message" rows="4" placeholder="Tell us about your project…" required></textarea></label>
+            <button type="submit" class="btn btn--accent btn--block">Request a Quote</button>
+            <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+
+          <ul class="contact__list">
+            <li><svg viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 005 5L15 12l5 2v4a2 2 0 01-2 2A16 16 0 013 5a2 2 0 012-2z"/></svg><a id="phoneLink" data-text="business.phone"></a></li>
+            <li><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a id="emailLink" data-text="business.email"></a></li>
+            <li><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span data-text="business.serviceArea"></span></li>
+          </ul>
+          <div class="socials" id="socials"></div>
+          <footer class="footer">
+            <span>© <span id="year"></span> <span data-text="business.name"></span></span>
+            <span data-text="business.credentials"></span>
+          </footer>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Drone-camera HUD -->
+  <div class="hud" aria-hidden="true">
+    <div class="hud__corner hud__corner--tl"></div><div class="hud__corner hud__corner--tr"></div>
+    <div class="hud__corner hud__corner--bl"></div><div class="hud__corner hud__corner--br"></div>
+    <div class="hud__rec"><i></i> REC <span id="hudTime">00:00:00</span></div>
+    <div class="hud__alt">ALT <strong id="hudAlt">120</strong> FT</div>
+    <div class="hud__season" id="hudSeason"></div>
+    <div class="hud__chapter"><strong id="hudNum">01</strong> / <span id="hudTotal">07</span></div>
+  </div>
+  <nav class="rail" id="rail" aria-label="Jump to page"></nav>
+  <div class="progress"><span id="progressBar"></span></div>
+
+  <!-- Lightbox (videos & photos) -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Media viewer" hidden>
+    <button class="lightbox__close" id="lbClose" aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Previous"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <div class="lightbox__stage" id="lbStage"></div>
+    <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Next"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+    <p class="lightbox__caption" id="lbCaption"></p>
+  </div>
+
+<!-- Loads the editable content (content/*.json — managed at /admin), then starts the site -->
+<script>
+  (function () {
+    var files = ["business", "seo", "backgrounds", "home", "categories", "films", "gallery", "services", "about", "reviews", "contact"];
+    var get = function (n) {
+      return fetch("content/" + n + ".json", { cache: "no-cache" })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .catch(function (e) { console.error("[content] Could not load content/" + n + ".json —", e); return {}; });
+    };
+    Promise.all(files.map(get)).then(function (d) {
+      window.SITE = {
+        business: d[0], seo: d[1], pages: d[2].pages || [], hero: d[3], categories: d[4].categories || [],
+        films: d[5], gallery: d[6], services: d[7], about: d[8], testimonials: d[9], contact: d[10]
+      };
+      var s = document.createElement("script");
+      s.src = "script.js";
+      document.body.appendChild(s);
+    });
+  })();
+</script>
+  <script type="module" src="world.js"></script>
+</body>
+</html>

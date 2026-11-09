@@ -1,0 +1,26 @@
+{
+  "eyebrow": "05 — Testimonials",
+  "heading": "Clients Who Looked Up",
+  "items": [
+    {
+      "quote": "The aerial video for our listing was stunning. We had three offers in the first weekend — buyers kept mentioning the drone tour.",
+      "name": "[Client Name]",
+      "role": "Realtor, [Brokerage]"
+    },
+    {
+      "quote": "They captured our wedding from angles we never imagined. Every time we watch the film we cry all over again.",
+      "name": "[Client Name]",
+      "role": "Wedding Client"
+    },
+    {
+      "quote": "Monthly progress flyovers keep our investors in the loop and save our PMs hours on site. Professional, on time, every time.",
+      "name": "[Client Name]",
+      "role": "Project Manager, [Construction Co.]"
+    },
+    {
+      "quote": "Our brand video looks like a Hollywood production. The response on social media has been incredible.",
+      "name": "[Client Name]",
+      "role": "Marketing Director, [Company]"
+    }
+  ]
+}

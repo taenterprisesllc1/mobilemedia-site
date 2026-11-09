@@ -1,0 +1,16 @@
+{
+  "name": "Mobile Media",
+  "logo": "assets/images/logo.jpg",
+  "city": "[City, State]",
+  "phone": "(000) 000-0000",
+  "email": "hello@yourdomain.com",
+  "serviceArea": "Serving [City, State] & [surrounding areas]",
+  "credentials": "FAA Part 107 Certified · Fully Insured",
+  "formEndpoint": "",
+  "social": {
+    "instagram": "https://instagram.com/",
+    "youtube": "https://youtube.com/",
+    "tiktok": "https://tiktok.com/",
+    "facebook": "https://facebook.com/"
+  }
+}
