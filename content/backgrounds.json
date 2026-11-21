@@ -10,8 +10,8 @@
     },
     {
       "place": "Los Angeles Coastline",
-      "video": "https://videos.pexels.com/video-files/32226042/13744595_1280_720_60fps.mp4",
-      "poster": "https://images.pexels.com/videos/32226042/aerial-beach-beautiful-california-32226042.jpeg?auto=compress&w=1280",
+      "video": "/assets/videos/backgrounds/sequence-01-background-720p.mp4",
+      "poster": "",
       "sunX": 70,
       "sunY": 8,
       "color": ""
