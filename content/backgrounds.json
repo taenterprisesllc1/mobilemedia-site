@@ -2,7 +2,7 @@
   "pages": [
     {
       "place": "Austin, Texas",
-      "video": "https://videos.pexels.com/video-files/17303815/17303815-hd_1280_720_30fps.mp4",
+      "video": "/assets/videos/backgrounds/sequence-01-background-720p.mp4",
       "poster": "https://images.pexels.com/videos/17303815/above-water-aerial-aerial-footage-aerial-photography-17303815.jpeg?auto=compress&w=1280",
       "sunX": 96,
       "sunY": 30,
