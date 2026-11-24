@@ -1,7 +1,7 @@
 {
   "pages": [
     {
-      "place": "Austin, Texas",
+      "place": "...",
       "video": "/assets/videos/backgrounds/track-fpv.mp4",
       "poster": "/assets/videos/backgrounds/track-fpv.jpg",
       "sunX": 96,
@@ -9,7 +9,7 @@
       "color": ""
     },
     {
-      "place": "Los Angeles Coastline",
+      "place": "GARAGE 66",
       "video": "/assets/videos/backgrounds/sequence-01-background-720p.mp4",
       "poster": "/assets/videos/backgrounds/screenshot-2026-11-21-at-5.00.46 pm.png",
       "sunX": 70,
@@ -17,7 +17,7 @@
       "color": ""
     },
     {
-      "place": "Miami, Florida",
+      "place": "ROUGHSTOCK BAND",
       "video": "/assets/videos/backgrounds/band-session.mp4",
       "poster": "/assets/videos/backgrounds/band-session.jpg",
       "sunX": 82,
@@ -25,17 +25,17 @@
       "color": ""
     },
     {
-      "place": "Scottsdale, Arizona",
-      "video": "/assets/videos/backgrounds/sunset-pond.mp4",
-      "poster": "/assets/videos/backgrounds/sunset-pond.jpg",
+      "place": "RACE TRACK",
+      "video": "/assets/videos/backgrounds/track-fpv.mp4",
+      "poster": "/assets/videos/backgrounds/track-fpv.jpg",
       "sunX": 8,
       "sunY": 24,
       "color": "saturate(1.1)"
     },
     {
-      "place": "Breckenridge, Colorado",
-      "video": "https://videos.pexels.com/video-files/19554888/19554888-hd_1366_720_24fps.mp4",
-      "poster": "https://images.pexels.com/videos/19554888/aerial-footage-breckenridge-colorado-drone-19554888.jpeg?auto=compress&w=1280",
+      "place": "TEXAS SKI RANCH",
+      "video": "/assets/videos/backgrounds/sunset-pond.mp4",
+      "poster": "/assets/videos/backgrounds/sunset-pond.jpg",
       "sunX": 70,
       "sunY": 6,
       "color": ""
