@@ -10,8 +10,8 @@
     },
     {
       "place": "Los Angeles Coastline",
-      "video": "/assets/videos/backgrounds/sequence-01-background-720p.mp4",
-      "poster": "",
+      "video": "/assets/videos/backgrounds/track-fpv.mp4",
+      "poster": "/assets/videos/backgrounds/track-fpv.jpg",
       "sunX": 70,
       "sunY": 8,
       "color": ""
