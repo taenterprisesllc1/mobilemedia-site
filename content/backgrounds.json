@@ -2,16 +2,16 @@
   "pages": [
     {
       "place": "Austin, Texas",
-      "video": "/assets/videos/backgrounds/sequence-01-background-720p.mp4",
-      "poster": "/assets/videos/backgrounds/screenshot-2026-11-21-at-5.00.46 pm.png",
+      "video": "/assets/videos/backgrounds/track-fpv.mp4",
+      "poster": "/assets/videos/backgrounds/track-fpv.jpg",
       "sunX": 96,
       "sunY": 30,
       "color": ""
     },
     {
       "place": "Los Angeles Coastline",
-      "video": "/assets/videos/backgrounds/track-fpv.mp4",
-      "poster": "/assets/videos/backgrounds/track-fpv.jpg",
+      "video": "/assets/videos/backgrounds/sequence-01-background-720p.mp4",
+      "poster": "/assets/videos/backgrounds/screenshot-2026-11-21-at-5.00.46 pm.png",
       "sunX": 70,
       "sunY": 8,
       "color": ""
