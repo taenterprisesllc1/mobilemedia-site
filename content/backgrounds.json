@@ -26,8 +26,8 @@
     },
     {
       "place": "Scottsdale, Arizona",
-      "video": "https://videos.pexels.com/video-files/30848101/13192015_1280_720_60fps.mp4",
-      "poster": "https://images.pexels.com/videos/30848101/aerial-arizona-blue-sky-brush-30848101.jpeg?auto=compress&w=1280",
+      "video": "/assets/videos/backgrounds/sunset-pond.mp4",
+      "poster": "/assets/videos/backgrounds/sunset-pond.jpg",
       "sunX": 8,
       "sunY": 24,
       "color": "saturate(1.1)"
