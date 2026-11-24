@@ -1,7 +1,7 @@
 {
   "pages": [
     {
-      "place": "...",
+      "place": "(BAR)",
       "video": "/assets/videos/backgrounds/track-fpv.mp4",
       "poster": "/assets/videos/backgrounds/track-fpv.jpg",
       "sunX": 96,
@@ -25,7 +25,7 @@
       "color": ""
     },
     {
-      "place": "RACE TRACK",
+      "place": "RACE TRACK (CONSTRUCTION)",
       "video": "/assets/videos/backgrounds/track-fpv.mp4",
       "poster": "/assets/videos/backgrounds/track-fpv.jpg",
       "sunX": 8,
@@ -33,7 +33,7 @@
       "color": "saturate(1.1)"
     },
     {
-      "place": "TEXAS SKI RANCH",
+      "place": "TEXAS SKI RANCH (REAL ESTATE)",
       "video": "/assets/videos/backgrounds/sunset-pond.mp4",
       "poster": "/assets/videos/backgrounds/sunset-pond.jpg",
       "sunX": 70,
@@ -41,7 +41,7 @@
       "color": ""
     },
     {
-      "place": "New Mexico",
+      "place": "(MOTOCROSS)",
       "video": "https://videos.pexels.com/video-files/30299565/12988969_1280_720_60fps.mp4",
       "poster": "https://images.pexels.com/videos/30299565/canyons-drone-footage-mountains-new-mexico-30299565.jpeg?auto=compress&w=1280",
       "sunX": 78,
@@ -49,7 +49,7 @@
       "color": ""
     },
     {
-      "place": "Texas Hill Country",
+      "place": "Texas Hill Country (STOCKS or APP)",
       "video": "https://videos.pexels.com/video-files/35288398/14950057_1280_720_30fps.mp4",
       "poster": "https://images.pexels.com/videos/35288398/aerial-austin-boating-boats-35288398.jpeg?auto=compress&w=1280",
       "sunX": 18,
