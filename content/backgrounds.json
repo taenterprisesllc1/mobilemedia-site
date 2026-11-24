@@ -18,8 +18,8 @@
     },
     {
       "place": "Miami, Florida",
-      "video": "https://videos.pexels.com/video-files/30872154/13201260_1280_720_30fps.mp4",
-      "poster": "https://images.pexels.com/videos/30872154/4k-drone-4k-drone-footage-4k-drone-video-a-bird-s-eye-view-30872154.jpeg?auto=compress&w=1280",
+      "video": "/assets/videos/backgrounds/band-session.mp4",
+      "poster": "/assets/videos/backgrounds/band-session.jpg",
       "sunX": 82,
       "sunY": 8,
       "color": ""
